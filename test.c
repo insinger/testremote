@@ -2,5 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-	printf("Hello world!\n");
+	char *planet;
+	if (argc==2) planet=argv[1]; else planet="world";
+	printf("Hello %s!\n",planet);
 }
